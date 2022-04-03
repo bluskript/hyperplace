@@ -12,12 +12,14 @@ specifiers:
   node-fetch: ^3.2.3
   utf-8-validate: ^5.0.9
   ws: ^8.5.0
+  yaml: ^1.10.2
 
 dependencies:
   chalk: 5.0.1
   jimp: 0.16.1
   mitt: 3.0.0
   node-fetch: 3.2.3
+  yaml: 1.10.2
 
 optionalDependencies:
   bufferutil: 4.0.6
@@ -1035,3 +1037,8 @@ packages:
   /yallist/4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
     dev: true
+
+  /yaml/1.10.2:
+    resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
+    engines: {node: '>= 6'}
+    dev: false

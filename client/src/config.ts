@@ -1,5 +1,7 @@
 import { readFile } from "fs/promises";
 
+import YAML from "yaml";
+
 export interface Config {
   serverHost: string;
   startTime: number;
@@ -9,5 +11,5 @@ export interface Config {
 }
 
 export async function loadConfig(path: string): Promise<Config> {
-  return JSON.parse(await readFile(path, "utf-8"));
+  return YAML.parse(await readFile(path, "utf-8"));
 }

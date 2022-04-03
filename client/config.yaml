@@ -1,0 +1,9 @@
+serverHost: localhost:8001
+startTime: 0
+imgPath: "./img/hypertrance.png"
+topLeftCorner: 
+  x: 0
+  y: 0
+workers: 
+  - ''
+  - ''

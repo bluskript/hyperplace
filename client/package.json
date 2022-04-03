@@ -20,7 +20,8 @@
     "chalk": "^5.0.1",
     "jimp": "^0.16.1",
     "mitt": "^3.0.0",
-    "node-fetch": "^3.2.3"
+    "node-fetch": "^3.2.3",
+    "yaml": "^1.10.2"
   },
   "optionalDependencies": {
     "bufferutil": "^4.0.6",
