@@ -1,6 +1,7 @@
 import chalk from "chalk";
 import { readFile } from "fs/promises";
 import { default as Jimp } from "jimp";
+import WebSocket from "ws";
 import { API, Color, sleep } from "./api";
 import { loadConfig } from "./config";
 import { fromJimp } from "./image";
@@ -8,7 +9,9 @@ import { fromJimp } from "./image";
 async function start() {
   const cfg = await loadConfig("./config.json");
 
-  const api = new API(cfg.token);
+  const serverSocket = new WebSocket(`wss://${cfg.serverHost}`);
+
+  const api = new API(cfg.workers[0]);
   api.subscribe();
 
   const jimpImage = await Jimp.read(await readFile(cfg.imgPath));

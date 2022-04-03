@@ -1,0 +1,36 @@
+{
+  "name": "hyperplace",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "esmo src/index.ts"
+  },
+  "author": "Blusk",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-router": "^7.4.4",
+    "@types/koa__router": "^8.0.11",
+    "@types/node": "^17.0.23",
+    "@types/ws": "^8.5.3",
+    "esbuild-node-loader": "^0.8.0",
+    "esmo": "^0.14.1",
+    "ws": "^8.5.0"
+  },
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "chalk": "^5.0.1",
+    "jimp": "^0.16.1",
+    "koa": "^2.13.4",
+    "koa-easy-ws": "^2.1.0",
+    "koa-logger": "^3.2.1",
+    "mitt": "^3.0.0",
+    "node-fetch": "^3.2.3"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.6",
+    "utf-8-validate": "^5.0.9"
+  }
+}

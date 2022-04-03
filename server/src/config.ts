@@ -1,10 +1,8 @@
 import { readFile } from "fs/promises";
 
 export interface Config {
-  startTime: number;
-  imgPath: string;
-  token: string;
-  topLeftCorner: { x: number; y: number };
+  port: string;
+  placerRatio: number;
 }
 
 export async function loadConfig(path: string): Promise<Config> {
